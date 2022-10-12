@@ -1,0 +1,111 @@
+.account-form {
+	.acc-header {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 29px;
+		color: #5e5873;
+	}
+	p {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: #6e6b7b;
+	}
+	form {
+		.form-flex {
+			.input-field {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				width: 45%;
+				input {
+					width: 100%;
+					padding: 10px;
+					background: #ffffff;
+					border-radius: 5px;
+					border: 2px solid #ccc;
+					outline: none;
+				}
+				label {
+					font-size: 12px;
+					line-height: 15px;
+					color: #6e6b7b;
+				}
+			}
+			.password-field {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				width: 45%;
+				label {
+					font-size: 12px;
+					line-height: 15px;
+					color: #6e6b7b;
+				}
+				.password {
+					padding: 10px;
+					border-radius: 5px;
+					border: 2px solid #ccc;
+					.eye {
+						cursor: pointer;
+					}
+					input {
+						width: 90%;
+						background: #ffffff;
+						outline: none;
+					}
+				}
+			}
+			.profile-field {
+				width: 100%;
+				.input-field {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					width: 100%;
+					input {
+						width: 100%;
+						padding: 10px;
+						background: #ffffff;
+						border-radius: 5px;
+						border: 2px solid #ccc;
+						outline: none;
+					}
+					label {
+						font-size: 12px;
+						line-height: 15px;
+						color: #6e6b7b;
+					}
+				}
+			}
+			.remember {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 8px;
+				width: 100%;
+				label {
+					font-size: 12px;
+					line-height: 15px;
+					color: #6e6b7b;
+				}
+			}
+			.submit-btn {
+				margin-left: auto;
+				button {
+					background-color: #7367f0;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					border-radius: 5px;
+					small {
+						font-size: 14px;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

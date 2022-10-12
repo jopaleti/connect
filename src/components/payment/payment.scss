@@ -1,0 +1,169 @@
+.payment {
+	.payment-container {
+		h1 {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 29px;
+			color: #5e5873;
+		}
+		P {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #6e6b7b;
+		}
+		.plan-flex {
+			.plan-box {
+				width: 30%;
+				background-color: rgba(186, 191, 199, 0.12);
+				padding: 20px 40px;
+				border-radius: 10px;
+				flex-grow: 0;
+				flex-shrink: 0;
+				h1 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 23px;
+					line-height: 26px;
+					text-align: center;
+					color: #82868b;
+					text-align: center;
+				}
+				p {
+					text-align: center;
+					margin-top: 8px;
+				}
+				.price {
+					text-align: center;
+					h1 {
+						font-style: normal;
+						font-weight: 600;
+						font-size: 38px;
+						line-height: 46px;
+						color: #7367f0;
+					}
+					sup {
+						font-style: normal;
+						font-weight: 500;
+						font-size: 15px;
+						line-height: 24px;
+						color: #7367f0;
+					}
+					sub {
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 21px;
+						color: #6e6b7b;
+					}
+				}
+			}
+		}
+		.payInfo-container {
+			h1 {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 29px;
+				color: #5e5873;
+			}
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				color: #6e6b7b;
+			}
+			.form-container {
+				.card-num {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					width: 100%;
+					label {
+						font-size: 12px;
+						line-height: 15px;
+						color: #6e6b7b;
+					}
+					.password {
+						padding: 10px;
+						border-radius: 5px;
+						border: 2px solid #ccc;
+						.eye {
+							cursor: pointer;
+						}
+						input {
+							width: 90%;
+							background: #ffffff;
+							outline: none;
+						}
+						input[type="number"] {
+							-moz-appearance: textfield;
+							appearance: textfield;
+							margin: 0;
+						}
+						input[type="number"]::-webkit-inner-spin-button {
+							-webkit-appearance: none;
+						}
+					}
+				}
+				.name-field {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					width: 40%;
+					input {
+						width: 100%;
+						padding: 10px;
+						background: #ffffff;
+						border-radius: 5px;
+						border: 2px solid #ccc;
+						outline: none;
+					}
+					label {
+						font-size: 12px;
+						line-height: 15px;
+						color: #6e6b7b;
+					}
+				}
+				.date-field {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					width: 25%;
+					input {
+						width: 100%;
+						padding: 10px;
+						background: #ffffff;
+						border-radius: 5px;
+						border: 2px solid #ccc;
+						outline: none;
+					}
+					label {
+						font-size: 12px;
+						line-height: 15px;
+						color: #6e6b7b;
+					}
+				}
+				.cvv-field {
+					@extend .date-field;
+				}
+				.submit-btn {
+					margin-left: auto;
+					button {
+						background-color: #7367f0;
+						display: flex;
+						align-items: center;
+						gap: 10px;
+						border-radius: 5px;
+						small {
+							font-size: 14px;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}

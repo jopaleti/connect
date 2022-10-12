@@ -1,0 +1,48 @@
+@mixin center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.create-flex {
+	height: 100vh;
+	.create-left {
+		width: 30%;
+		position: relative;
+		.logo {
+			position: absolute;
+			left: 100px;
+			top: 50px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.create-right {
+		width: 70%;
+		.right-container {
+			width: 60%;
+			@include center();
+			margin-top: 10%;
+			.right-top-flex {
+				padding-bottom: 40px;
+				border-bottom: 2px solid #eee;
+				.sub-top-flex {
+					cursor: pointer;
+					.highlight {
+						padding: 10px;
+						border-radius: 10px;
+						background-color: #eee;
+					}
+					h5 {
+						color: #7367f0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// "#7367f0"
