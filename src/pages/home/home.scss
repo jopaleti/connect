@@ -1,0 +1,116 @@
+.home {
+	.template {
+		@media (max-width: 1200px) {
+			margin-left: 16px;
+		}
+	}
+	.home-container {
+		background: url("../../assets/images/banner.jpg");
+		height: 320px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 6px;
+		overflow: hidden;
+		.flex-item {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			h1 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 29px;
+				text-align: center;
+				color: #7367f0;
+				@media (max-width: 531px) {
+					font-size: 22px;
+					@media (max-width: 434px) {
+						font-size: 19px;
+						@media (max-width: 390px) {
+							font-size: 18px;
+							@media (max-width: 347px) {
+								font-size: 17px;
+							}
+						}
+					}
+				}
+			}
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				text-align: center;
+				color: #6e6b7b;
+			}
+			form {
+				width: 45%;
+				margin-left: auto;
+				margin-right: auto;
+				input {
+					width: 100%;
+					background: #ffffff;
+					border: 1px solid #d8d6de;
+					border-radius: 5px;
+					outline: none;
+				}
+				@media (max-width: 531px) {
+					width: 70%;
+					@media (max-width: 390px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.flex-container {
+		.flex-item {
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 30%;
+			background-color: #fff;
+			border-radius: 6px;
+			overflow: hidden;
+			align-self: stretch;
+			img {
+				width: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+			div {
+				h2 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 22px;
+					text-align: center;
+					color: #5e5873;
+				}
+				p {
+					margin-top: 8px;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 21px;
+					text-align: center;
+					color: #6e6b7b;
+				}
+			}
+			@media (max-width: 877px) {
+				width: 47%;
+				@media (max-width: 699px) {
+					width: 46%;
+					@media (max-width: 531px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

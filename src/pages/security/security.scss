@@ -1,0 +1,347 @@
+.security {
+	.profile-acc {
+		background: #ffffff;
+		border-radius: 6px;
+		h1 {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #5e5873;
+		}
+		.form-container {
+			form {
+				.form-flex {
+					.input-field {
+						display: flex;
+						flex-direction: column;
+						gap: 8px;
+						width: 48%;
+						input {
+							width: 100%;
+							padding: 10px;
+							background: #ffffff;
+							border-radius: 5px;
+							border: 2px solid #ccc;
+							outline: none;
+						}
+						label {
+							font-style: normal;
+							font-weight: 400;
+							font-size: 12px;
+							line-height: 15px;
+							color: #6e6b7b;
+						}
+					}
+					.input-pass {
+						display: flex;
+						flex-direction: column;
+						gap: 8px;
+						width: 100%;
+						input {
+							width: 48%;
+							padding: 10px;
+							background: #ffffff;
+							border-radius: 5px;
+							border: 2px solid #ccc;
+							outline: none;
+						}
+						label {
+							font-style: normal;
+							font-weight: 400;
+							font-size: 12px;
+							line-height: 15px;
+							color: #6e6b7b;
+						}
+					}
+				}
+				.form-bottom {
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 21px;
+					color: #6e6b7b;
+				}
+				.form-bottom {
+					.content {
+						h5 {
+							font-style: normal;
+							font-weight: 500;
+							font-size: 15px;
+							line-height: 24px;
+							color: #5e5873;
+						}
+						ul {
+							list-style-type: none;
+							list-style-position: inside;
+							li {
+								font-style: normal;
+								font-weight: 400;
+								font-size: 14px;
+								line-height: 27px;
+								color: #6e6b7b;
+							}
+							li::before {
+								content: "\2022";
+								font-weight: bold;
+								width: 16px;
+								margin-right: 10px;
+								font-size: 20px;
+								color: #6e6b7b;
+							}
+						}
+						div {
+							.save {
+								background: #7367f0;
+								border: 1px solid #7367f0;
+								border-radius: 5px;
+								font-style: normal;
+								font-weight: 500;
+								font-size: 14px;
+								line-height: 17px;
+								text-align: center;
+								letter-spacing: 0.4px;
+								color: #ffffff;
+							}
+							.discard {
+								color: #82868b;
+								border: 1px solid #82868b;
+								border-radius: 5px;
+								font-style: normal;
+								font-weight: 500;
+								font-size: 14px;
+								line-height: 17px;
+								text-align: center;
+								letter-spacing: 0.4px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.verification {
+		background: #ffffff;
+		border-radius: 6px;
+		h1 {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #5e5873;
+		}
+		h5 {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			color: #6e6b7b;
+		}
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #6e6b7b;
+		}
+		div {
+			a {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+				text-align: center;
+				letter-spacing: 0.4px;
+				color: #ffffff;
+				background: #7367f0;
+				border-radius: 5px;
+			}
+		}
+	}
+	.api-container {
+		.flex-container {
+			background: #ffffff;
+			border-radius: 6px;
+			.item-left {
+				width: 40%;
+				@media (max-width: 1000px) {
+					width: 50%;
+					@media (max-width: 750px) {
+						width: 60%;
+						@media (max-width: 600px) {
+							width: 100%;
+						}
+					}
+				}
+				h1 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 22px;
+					color: #5e5873;
+				}
+				.left-bottom {
+					.input-field {
+						display: flex;
+						flex-direction: column;
+						gap: 8px;
+						width: 100%;
+						input {
+							width: 100%;
+							padding: 8px 10px;
+							background: #ffffff;
+							border-radius: 5px;
+							border: 2px solid #ccc;
+							outline: none;
+						}
+						select {
+							width: 100%;
+							padding: 8px 10px;
+							background: #ffffff;
+							border-radius: 5px;
+							border: 2px solid #ccc;
+							outline: none;
+							color: #b9b9c3;
+						}
+						label {
+							font-size: 12px;
+							line-height: 15px;
+							color: #6e6b7b;
+						}
+					}
+					.button-field {
+						button {
+							background: #7367f0;
+							border-radius: 5px;
+							width: 100%;
+							padding: 14px;
+							text-align: center;
+							font-style: normal;
+							font-weight: 500;
+							font-size: 14px;
+							line-height: 17px;
+							text-align: center;
+							letter-spacing: 0.4px;
+							color: #ffffff;
+						}
+					}
+				}
+			}
+			.item-right {
+				width: 40%;
+				height: 100%;
+				img {
+					height: 100%;
+				}
+				@media (max-width: 600px) {
+					display: none;
+				}
+			}
+		}
+		.key {
+			background: #ffffff;
+			border-radius: 6px;
+			@media (max-width: 360px) {
+				padding: 10px !important;
+			}
+			h1 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #5e5873;
+			}
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				color: #6e6b7b;
+				@media (max-width: 600px) {
+					font-size: 12px;
+					padding-right: 0 !important;
+				}
+			}
+		}
+	}
+	.recent {
+		background: #ffffff;
+		border-radius: 6px;
+		h1 {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #5e5873;
+		}
+		.recent-inside {
+			.table {
+				width: 100%;
+				overflow-x: auto;
+				table {
+					border: 1px solid #dddddd;
+					width: 100%;
+					background-color: blue;
+					border-collapse: collapse;
+					thead {
+						width: 100%;
+						background: #f3f2f7;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 12px;
+						line-height: 15px;
+						letter-spacing: 1px;
+						text-transform: uppercase;
+						color: #5e5873;
+						tr {
+							text-align: left;
+							.info {
+								width: 40%;
+							}
+							.single {
+								width: 20%;
+							}
+						}
+						th {
+							padding: 12px 15px;
+						}
+					}
+					tbody {
+						width: 100%;
+						background: #fff;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 21px;
+						color: #6e6b7b;
+						tr {
+							text-align: left;
+							border-bottom: 1px solid #dddddd;
+							.info {
+								width: 40%;
+								.flex {
+									p {
+										font-style: normal;
+										font-weight: 600;
+										font-size: 14px;
+										line-height: 21px;
+										color: #6e6b7b;
+									}
+								}
+							}
+							.single {
+								width: 20%;
+							}
+							&:last-of-type {
+								border-bottom: none;
+							}
+						}
+						td {
+							padding: 12px 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

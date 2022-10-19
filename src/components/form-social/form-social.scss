@@ -1,0 +1,22 @@
+.form-social {
+	.divider {
+		.line {
+			width: 45%;
+		}
+		small {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #6e6b7b;
+		}
+	}
+	.img-icon {
+		img {
+			width: 30px;
+			height: 30px;
+			object-fit: cover;
+			cursor: pointer;
+		}
+	}
+}

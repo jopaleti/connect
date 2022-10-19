@@ -1,0 +1,29 @@
+.error {
+	background: #b5b5b5;
+	height: 100vh;
+	.flex-1 {
+		h1 {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: center;
+			color: #5e5873;
+		}
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			text-align: center;
+			color: #6e6b7b;
+		}
+		a {
+			background: #7367f0;
+			border-radius: 5px;
+		}
+	}
+	.flex-2 {
+		margin-bottom: 8%;
+	}
+}

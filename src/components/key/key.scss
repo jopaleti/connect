@@ -1,0 +1,56 @@
+.key {
+	.key-container {
+		background: rgba(186, 191, 199, 0.12);
+		border-radius: 6px;
+		@media (max-width: 360px) {
+			padding: 10px !important;
+		}
+		.key-left {
+			div {
+				h1 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 22px;
+					color: #5e5873;
+					@media (max-width: 600px) {
+						font-size: 15px;
+					}
+				}
+				span {
+					font-style: normal;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 18px;
+					text-align: center;
+					color: #7367f0;
+					background: rgba(115, 103, 240, 0.12);
+					border-radius: 4px;
+				}
+				h6 {
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 21px;
+					color: #6e6b7b;
+					@media (max-width: 600px) {
+						font-size: 12px;
+					}
+				}
+				.copy {
+					cursor: pointer;
+				}
+			}
+		}
+		.key-last {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #6e6b7b;
+			@media (max-width: 600px) {
+				font-size: 12px;
+			}
+		}
+	}
+}

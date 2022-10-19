@@ -1,0 +1,114 @@
+.api {
+	.template {
+		@media (max-width: 1000px) {
+			margin-left: 10px;
+			margin-right: 10px !important;
+		}
+	}
+	.api-container {
+		.flex-container {
+			background: #ffffff;
+			border-radius: 6px;
+			.item-left {
+				width: 40%;
+				@media (max-width: 1000px) {
+					width: 50%;
+					@media (max-width: 750px) {
+						width: 60%;
+						@media (max-width: 600px) {
+							width: 100%;
+						}
+					}
+				}
+				h1 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 22px;
+					color: #5e5873;
+				}
+				.left-bottom {
+					.input-field {
+						display: flex;
+						flex-direction: column;
+						gap: 8px;
+						width: 100%;
+						input {
+							width: 100%;
+							padding: 8px 10px;
+							background: #ffffff;
+							border-radius: 5px;
+							border: 2px solid #ccc;
+							outline: none;
+						}
+						select {
+							width: 100%;
+							padding: 8px 10px;
+							background: #ffffff;
+							border-radius: 5px;
+							border: 2px solid #ccc;
+							outline: none;
+							color: #b9b9c3;
+						}
+						label {
+							font-size: 12px;
+							line-height: 15px;
+							color: #6e6b7b;
+						}
+					}
+					.button-field {
+						button {
+							background: #7367f0;
+							border-radius: 5px;
+							width: 100%;
+							padding: 14px;
+							text-align: center;
+							font-style: normal;
+							font-weight: 500;
+							font-size: 14px;
+							line-height: 17px;
+							text-align: center;
+							letter-spacing: 0.4px;
+							color: #ffffff;
+						}
+					}
+				}
+			}
+			.item-right {
+				width: 40%;
+				height: 100%;
+				img {
+					height: 100%;
+				}
+				@media (max-width: 600px) {
+					display: none;
+				}
+			}
+		}
+		.key {
+			background: #ffffff;
+			border-radius: 6px;
+			@media (max-width: 360px) {
+				padding: 10px !important;
+			}
+			h1 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #5e5873;
+			}
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				color: #6e6b7b;
+				@media (max-width: 600px) {
+					font-size: 12px;
+					padding-right: 0 !important;
+				}
+			}
+		}
+	}
+}

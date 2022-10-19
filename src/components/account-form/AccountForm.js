@@ -23,12 +23,17 @@ function AccountForm(props) {
 					</div>
 					<div className="input-field">
 						<label htmlFor="username">Email</label>
-						<input type="email" placeholder="Johndoe@gmail.com" />
+						<input type="email" placeholder="Johndoe@gmail.com" required />
 					</div>
 					<div className="password-field">
 						<label htmlFor="username">Password</label>
 						<div className="password flex items-center justify-between">
-							<input ref={pass} type="password" placeholder="Password" />
+							<input
+								ref={pass}
+								type="password"
+								placeholder="Password"
+								required
+							/>
 							<div
 								className="eye"
 								onClick={() => {
@@ -64,6 +69,7 @@ function AccountForm(props) {
 								ref={pass}
 								type="password"
 								placeholder="Re-type Password"
+								required
 							/>
 							<div
 								className="eye"
@@ -97,7 +103,7 @@ function AccountForm(props) {
 					<div className="profile-field">
 						<div className="input-field">
 							<label htmlFor="prof-link">Profile Link</label>
-							<input type="text" placeholder="johndoe/profile" />
+							<input type="text" placeholder="johndoe/profile" required />
 						</div>
 					</div>
 					<div className="remember">

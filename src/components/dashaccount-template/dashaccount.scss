@@ -1,0 +1,52 @@
+.dashacc {
+	.dashacc-container {
+		@media (max-width: 1000px) {
+			margin-left: 16px !important;
+			margin-right: 16px !important;
+		}
+	}
+	.dash-header {
+		.items-left {
+			h1 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 29px;
+				color: #5e5873;
+				border-right: 1px solid #ebe9f1;
+			}
+			.active {
+				padding: 12px 20px;
+				background: #7367f0;
+				border-radius: 5px;
+				h6 {
+					color: #fff !important;
+				}
+			}
+			.text-flex {
+				p {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 21px;
+					color: #7367f0;
+				}
+				h6 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 17px;
+					letter-spacing: 0.4px;
+					color: #5e5873;
+				}
+			}
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				color: #6e6b7b;
+			}
+		}
+	}
+}

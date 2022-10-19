@@ -1,0 +1,39 @@
+.verify {
+	.auth-verify {
+		font-style: normal;
+		font-weight: 600 !important;
+		font-size: 14px;
+		line-height: 21px;
+		color: #6e6b7b;
+	}
+	.flex-input {
+		width: 100%;
+		height: auto;
+		input {
+			width: 14%;
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		/* Firefox */
+		input[type="number"] {
+			-moz-appearance: textfield;
+		}
+	}
+	.back-flex {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: #6e6b7b;
+		a {
+			color: #7367f0;
+		}
+		span {
+			color: #6e6b7b;
+		}
+	}
+}
