@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { button, person } from "../../assets";
 import DashboardTemplate from "../dashboard-template/DashboardTemplate";
 import "./dashaccount.scss";
 import { Link } from "react-router-dom";
 
 function DashAccountTemplate({ children }) {
+	const [plan, setPlan] = useState(false);
+	const [curr, setCurr] = useState("");
+	useEffect(() => {
+		window.location.pathname && setCurr("current");
+	}, [window.location.pathname]);
 	return (
 		<div className="dashacc">
 			<DashboardTemplate>
@@ -90,14 +95,22 @@ function DashAccountTemplate({ children }) {
 								</div>
 								<h6>Account</h6>
 							</div>
-							<Link to="/account/security">
-								<div className="text-flex flex items-center gap-2 active">
+							<Link to="/account">
+								<div
+									className={`text-flex flex items-center gap-2 ${
+										window.location.pathname === "/account" ? "active" : ""
+									}`}
+								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
 										strokeWidth={1.5}
-										stroke="#fff"
+										stroke={
+											window.location.pathname === "/account"
+												? "#fff"
+												: "#5E5873"
+										}
 										className="w-5 h-5"
 									>
 										<path
@@ -110,42 +123,60 @@ function DashAccountTemplate({ children }) {
 									<h6>Security</h6>
 								</div>
 							</Link>
-							<div className="text-flex flex items-center gap-2">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									strokeWidth={1.5}
-									stroke="#5E5873"
-									className="w-5 h-5"
+							<Link to="/plan">
+								<div
+									className={`text-flex flex items-center gap-2 ${
+										window.location.pathname === "/plan" ? "active" : ""
+									}`}
 								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5"
-									/>
-								</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										strokeWidth={1.5}
+										stroke={
+											window.location.pathname === "/plan" ? "#fff" : "#5E5873"
+										}
+										className="w-5 h-5"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5"
+										/>
+									</svg>
 
-								<h6 className="white">Billings & Plans</h6>
-							</div>
-							<div className="text-flex flex items-center gap-2">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									strokeWidth={1.5}
-									stroke="#5E5873"
-									className="w-5 h-5"
+									<h6 className="white">Billings & Plans</h6>
+								</div>
+							</Link>
+							<Link to="/notify">
+								<div
+									className={`text-flex flex items-center gap-2 ${
+										window.location.pathname === "/notify" ? "active" : ""
+									}`}
 								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-									/>
-								</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										strokeWidth={1.5}
+										stroke={
+											window.location.pathname === "/notify"
+												? "#fff"
+												: "#5E5873"
+										}
+										className="w-5 h-5"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+										/>
+									</svg>
 
-								<h6>Notifications</h6>
-							</div>
+									<h6>Notifications</h6>
+								</div>
+							</Link>
 							<div className="text-flex flex items-center gap-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

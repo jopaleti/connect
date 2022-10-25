@@ -17,6 +17,9 @@
 						flex-direction: column;
 						gap: 8px;
 						width: 48%;
+						@media (max-width: 680px) {
+							width: 100%;
+						}
 						input {
 							width: 100%;
 							padding: 10px;
@@ -45,6 +48,9 @@
 							border-radius: 5px;
 							border: 2px solid #ccc;
 							outline: none;
+							@media (max-width: 680px) {
+								width: 100%;
+							}
 						}
 						label {
 							font-style: normal;

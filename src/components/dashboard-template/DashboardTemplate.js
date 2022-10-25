@@ -119,15 +119,22 @@ function DashboardTemplate({ children, ...props }) {
 						<Link to="/account">
 							<div
 								className={`flex-item flex gap-2 px-4 py-3 items-center ${
-									window.location.pathname === "/account" ? curr : "no"
+									window.location.pathname === "/account" ||
+									window.location.pathname === "/notify"
+										? curr
+										: "no"
 								}`}
 							>
 								<img src={user} alt="img.jpg" />
 								<h6>Account Security</h6>
 							</div>
 						</Link>
-						<Link>
-							<div className="flex-item flex gap-2 px-4 py-3 items-center">
+						<Link to="/plan">
+							<div
+								className={`flex-item flex gap-2 px-4 py-3 items-center ${
+									window.location.pathname === "/plan" ? curr : "no"
+								}`}
+							>
 								<img src={credit} alt="img.jpg" />
 								<h6>Payment Info</h6>
 							</div>
