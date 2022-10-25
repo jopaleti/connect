@@ -6,6 +6,18 @@
 		}
 	}
 	.dash-header {
+		.acc-flex {
+			.text-flex {
+				@media (max-width: 550px) {
+					display: none;
+				}
+			}
+			p {
+				@media (max-width: 550px) {
+					display: none;
+				}
+			}
+		}
 		.items-left {
 			h1 {
 				font-style: normal;
@@ -48,5 +60,16 @@
 				color: #6e6b7b;
 			}
 		}
+	}
+	.header2 {
+		overflow-x: auto;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+		.white {
+			white-space: nowrap;
+		}
+	}
+	.header2::-webkit-scrollbar {
+		display: none;
 	}
 }

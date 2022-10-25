@@ -1,0 +1,158 @@
+.notification {
+	.notification-container {
+		background-color: #fff;
+		@media (max-width: 1000px) {
+			margin-right: unset !important;
+		}
+		.notify-form {
+			p {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 24px;
+				color: #5e5873;
+			}
+			select {
+				background: #ffffff;
+				border: 1px solid #d8d6de;
+				border-radius: 6px;
+				width: 40%;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 24px;
+				color: #b9b9c3;
+				@media (max-width: 480px) {
+					width: 70%;
+					@media (max-width: 345px) {
+						width: 100%;
+					}
+				}
+			}
+			div {
+				.btn {
+					border: 1px solid #7367f0;
+					background: #7367f0;
+					border-radius: 5px;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 17px;
+					text-align: center;
+					letter-spacing: 0.4px;
+					color: #ffffff;
+					@media (max-width: 342px) {
+						font-size: 12px;
+						padding-left: 18px;
+						padding-right: 18px;
+					}
+				}
+				.discard {
+					border-radius: 5px;
+					border: 1px solid #82868b;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 17px;
+					text-align: center;
+					letter-spacing: 0.4px;
+					color: #82868b;
+					@media (max-width: 342px) {
+						font-size: 12px;
+						padding-left: 18px;
+						padding-right: 18px;
+					}
+				}
+			}
+		}
+		.notification-header {
+			background: #ffffff;
+			border-radius: 6px;
+			h1 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #5e5873;
+			}
+			p {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 24px;
+				color: #5e5873;
+			}
+		}
+		.tab-container {
+			width: 100%;
+			overflow-x: auto;
+		}
+		.table {
+			width: 100%;
+			overflow-x: auto;
+			table {
+				border: 1px solid #dddddd;
+				width: 100%;
+				background-color: blue;
+				border-collapse: collapse;
+				thead {
+					width: 100%;
+					background: #f3f2f7;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 15px;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					color: #5e5873;
+					tr {
+						text-align: left;
+						.info {
+							width: 40%;
+						}
+						.single {
+							width: 20%;
+						}
+					}
+					th {
+						padding: 12px 15px;
+					}
+				}
+				tbody {
+					width: 100%;
+					background: #fff;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 21px;
+					color: #6e6b7b;
+					tr {
+						text-align: left;
+						border-bottom: 1px solid #dddddd;
+						.info {
+							width: 40%;
+							.flex {
+								p {
+									font-style: normal;
+									font-weight: 600;
+									font-size: 14px;
+									line-height: 21px;
+									color: #6e6b7b;
+								}
+							}
+						}
+						.single {
+							width: 20%;
+						}
+						&:last-of-type {
+							border-bottom: none;
+						}
+					}
+					td {
+						padding: 12px 15px;
+					}
+				}
+			}
+		}
+	}
+}

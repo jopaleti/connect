@@ -15,87 +15,89 @@ function License() {
 						your personal as well as client projects.
 					</p>
 					{/* Table */}
-					<div className="table mt-4">
-						<table>
-							<thead>
-								<tr>
-									<th className="info"></th>
-									<th className="single">SINGLE</th>
-									<th className="single">MULTIPLE</th>
-									<th className="single">EXTENDED</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td className="info">Number of end products</td>
-									<td className="single">1</td>
-									<td className="single">Unlimited</td>
-									<td className="single">1</td>
-								</tr>
-								<tr>
-									<td className="info">Use in single free end product</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-								</tr>
-								<tr>
-									<td className="info">
-										Free end product (Can have multiple End Users)
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-								</tr>
-								<tr>
-									<td className="info">Use in multiple free end product</td>
-									<td className="single">
-										<img src={cross} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-								</tr>
-								<tr>
-									<td className="info">
-										Use in single end product that’s sold
-									</td>
-									<td className="single">
-										<img src={cross} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={cross} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={check} alt="img.jpg" />
-									</td>
-								</tr>
-								<tr>
-									<td className="info">Create SaaS Application</td>
-									<td className="single">
-										<img src={cross} alt="img.jpg" />
-									</td>
-									<td className="single">
-										<img src={cross} alt="img.jpg" />
-									</td>
-									<td className="single">Single</td>
-								</tr>
-							</tbody>
-						</table>
+					<div className="tab-container">
+						<div className="table mt-4">
+							<table>
+								<thead>
+									<tr>
+										<th className="info"></th>
+										<th className="single">SINGLE</th>
+										<th className="single">MULTIPLE</th>
+										<th className="single">EXTENDED</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td className="info">Number of end products</td>
+										<td className="single">1</td>
+										<td className="single">Unlimited</td>
+										<td className="single">1</td>
+									</tr>
+									<tr>
+										<td className="info">Use in single free end product</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+									</tr>
+									<tr>
+										<td className="info">
+											Free end product (Can have multiple End Users)
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+									</tr>
+									<tr>
+										<td className="info">Use in multiple free end product</td>
+										<td className="single">
+											<img src={cross} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+									</tr>
+									<tr>
+										<td className="info">
+											Use in single end product that’s sold
+										</td>
+										<td className="single">
+											<img src={cross} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={cross} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={check} alt="img.jpg" />
+										</td>
+									</tr>
+									<tr>
+										<td className="info">Create SaaS Application</td>
+										<td className="single">
+											<img src={cross} alt="img.jpg" />
+										</td>
+										<td className="single">
+											<img src={cross} alt="img.jpg" />
+										</td>
+										<td className="single">Single</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 					{/* Content */}
 					<div className="content mt-8">

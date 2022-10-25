@@ -13,6 +13,8 @@ import {
 	Pricing,
 	License,
 	Security,
+	Notification,
+	Plan,
 } from "./pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { DashAccountTemplate, DashboardTemplate } from "./components";
@@ -38,6 +40,8 @@ function App() {
 					<Route exact element={<License />} path="/license" />
 					<Route exact element={<DashAccountTemplate />} path="/dashacc" />
 					<Route exact element={<Security />} path="/account" />
+					<Route exact element={<Notification />} path="/notify" />
+					<Route exact element={<Plan />} path="/plan" />
 					<Route path="*" element={<Error />} />
 				</Routes>
 			</Router>

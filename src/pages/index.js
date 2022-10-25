@@ -11,6 +11,8 @@ import Api from "./api/Api";
 import Pricing from "./pricing/Pricing";
 import License from "./license/License";
 import Security from "./security/Security";
+import Notification from "./notification/Notification";
+import Plan from "./plan/Plan";
 
 export {
 	CreateAccount,
@@ -26,4 +28,6 @@ export {
 	Pricing,
 	License,
 	Security,
+	Notification,
+	Plan,
 };

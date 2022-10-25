@@ -10,7 +10,7 @@ function DashAccountTemplate({ children }) {
 			<DashboardTemplate>
 				<div className="dashacc-container mr-8">
 					<div className="dash-header flex items-center justify-between mt-10">
-						<div className="items-left flex items-center gap-4">
+						<div className="items-left flex items-center gap-4 acc-flex flex-row">
 							<h1 className="pr-4">Account</h1>
 							<div className="text-flex flex items-center gap-2">
 								<svg
@@ -83,7 +83,7 @@ function DashAccountTemplate({ children }) {
 						</div>
 					</div>
 					<div className="dash-header flex items-center mt-4">
-						<div className="items-left flex items-center gap-4">
+						<div className="items-left flex items-center gap-4 header2 flex-row ">
 							<div className="text-flex flex items-center gap-2">
 								<div>
 									<img src={person} alt="img.jpg" />
@@ -126,7 +126,7 @@ function DashAccountTemplate({ children }) {
 									/>
 								</svg>
 
-								<h6>Billings & Plans</h6>
+								<h6 className="white">Billings & Plans</h6>
 							</div>
 							<div className="text-flex flex items-center gap-2">
 								<svg
