@@ -9,7 +9,7 @@ function DashAccountTemplate({ children }) {
 	const [curr, setCurr] = useState("");
 	useEffect(() => {
 		window.location.pathname && setCurr("active");
-	}, [window.location.pathname]);
+	}, []);
 	return (
 		<div className="dashacc">
 			<DashboardTemplate>

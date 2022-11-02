@@ -79,7 +79,7 @@ function DashboardTemplate({ children, ...props }) {
 	const [curr, setCurr] = useState("");
 	useEffect(() => {
 		window.location.pathname && setCurr("current");
-	}, [window.location.pathname]);
+	}, []);
 	return (
 		<div className="dashboard-template">
 			{open && sidebar(setOpen, open)}
