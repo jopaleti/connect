@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./create-account.scss";
-import { create, logo, mask } from "../../assets";
+import { create, logo } from "../../assets";
 import { AccountForm, Payment } from "../../components";
 
 function CreateAccount() {
