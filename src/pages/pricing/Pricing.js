@@ -188,7 +188,7 @@ function Pricing() {
 							<p className="mt-3">
 								You will get full access to with all the features for 14 days.
 							</p>
-							<div className="mt-10">
+							<div className="mt-10 trial-btn">
 								<a href="/">Start 14-day FREE trial</a>
 							</div>
 						</div>

@@ -51,7 +51,7 @@ export function sidebar(setres, res) {
 						<h6>Account Security</h6>
 					</div>
 				</Link>
-				<Link>
+				<Link to="/plan">
 					<div className="flex-item flex gap-2 px-4 py-3 items-center">
 						<img src={credit} alt="img.jpg" />
 						<h6>Payment Info</h6>

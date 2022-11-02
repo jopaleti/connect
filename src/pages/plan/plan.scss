@@ -475,6 +475,10 @@
 				color: #7367f0;
 			}
 		}
+		.tab-container {
+			width: 100%;
+			overflow-x: auto;
+		}
 		.table {
 			width: 100%;
 			overflow-x: auto;
@@ -483,6 +487,9 @@
 				width: 100%;
 				background-color: blue;
 				border-collapse: collapse;
+				@media (max-width: 600px) {
+					min-width: 500px;
+				}
 				thead {
 					width: 100%;
 					background: #f3f2f7;

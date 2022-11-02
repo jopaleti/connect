@@ -2,6 +2,7 @@
 	.template {
 		@media (max-width: 1200px) {
 			margin-left: 16px;
+			margin-right: 16px;
 		}
 	}
 	.home-container {
@@ -36,6 +37,9 @@
 							font-size: 18px;
 							@media (max-width: 347px) {
 								font-size: 17px;
+								@media (max-width: 307px) {
+									font-size: 16px;
+								}
 							}
 						}
 					}
@@ -60,10 +64,13 @@
 					border-radius: 5px;
 					outline: none;
 				}
-				@media (max-width: 531px) {
-					width: 70%;
-					@media (max-width: 390px) {
-						width: 100%;
+				@media (max-width: 750px) {
+					width: 80%;
+					@media (max-width: 531px) {
+						width: 70%;
+						@media (max-width: 390px) {
+							width: 100%;
+						}
 					}
 				}
 			}
@@ -78,6 +85,7 @@
 			border-radius: 6px;
 			overflow: hidden;
 			align-self: stretch;
+
 			img {
 				width: 100%;
 				object-fit: cover;
@@ -104,9 +112,9 @@
 			}
 			@media (max-width: 877px) {
 				width: 47%;
-				@media (max-width: 699px) {
+				@media (max-width: 714px) {
 					width: 46%;
-					@media (max-width: 531px) {
+					@media (max-width: 547px) {
 						width: 100%;
 					}
 				}

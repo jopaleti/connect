@@ -130,71 +130,73 @@ function Security() {
 					<h1 className="pl-6 pb-6">Recent devices</h1>
 					<hr />
 					<div className="recent-inside px-6 mt-5">
-						<div className="table mt-4">
-							<table>
-								<thead>
-									<tr>
-										<th className="info">BROWSER</th>
-										<th className="single">DEVICE</th>
-										<th className="single">LOCATION</th>
-										<th className="single">RECENT ACTIVITY</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td className="info">
-											<div className="flex items-center gap-3">
-												<div>
-													<img src={chrome} alt="img.jpg" />
+						<div className="tab-container">
+							<div className="table mt-4">
+								<table>
+									<thead>
+										<tr>
+											<th className="info">BROWSER</th>
+											<th className="single">DEVICE</th>
+											<th className="single">LOCATION</th>
+											<th className="single">RECENT ACTIVITY</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td className="info">
+												<div className="flex items-center gap-3">
+													<div>
+														<img src={chrome} alt="img.jpg" />
+													</div>
+													<p>Chrome on Windows</p>
 												</div>
-												<p>Chrome on Windows</p>
-											</div>
-										</td>
-										<td className="single">Dell XPS 15</td>
-										<td className="single">United States</td>
-										<td className="single">10, Jan 2020 20:07</td>
-									</tr>
-									<tr>
-										<td className="info">
-											<div className="flex items-center gap-3">
-												<div>
-													<img src={chrome} alt="img.jpg" />
+											</td>
+											<td className="single">Dell XPS 15</td>
+											<td className="single">United States</td>
+											<td className="single">10, Jan 2020 20:07</td>
+										</tr>
+										<tr>
+											<td className="info">
+												<div className="flex items-center gap-3">
+													<div>
+														<img src={chrome} alt="img.jpg" />
+													</div>
+													<p>Chrome on Android</p>
 												</div>
-												<p>Chrome on Android</p>
-											</div>
-										</td>
-										<td className="single">Google Pixel 3a</td>
-										<td className="single">Ghana</td>
-										<td className="single">11, Jan 2020 10:16</td>
-									</tr>
-									<tr>
-										<td className="info">
-											<div className="flex items-center gap-3">
-												<div>
-													<img src={chrome} alt="img.jpg" />
+											</td>
+											<td className="single">Google Pixel 3a</td>
+											<td className="single">Ghana</td>
+											<td className="single">11, Jan 2020 10:16</td>
+										</tr>
+										<tr>
+											<td className="info">
+												<div className="flex items-center gap-3">
+													<div>
+														<img src={chrome} alt="img.jpg" />
+													</div>
+													<p>Chrome on MacOS</p>
 												</div>
-												<p>Chrome on MacOS</p>
-											</div>
-										</td>
-										<td className="single">Apple iMac</td>
-										<td className="single">Mayotte</td>
-										<td className="single">11, Jan 2020 12:10</td>
-									</tr>
-									<tr>
-										<td className="info">
-											<div className="flex items-center gap-3">
-												<div>
-													<img src={chrome} alt="img.jpg" />
+											</td>
+											<td className="single">Apple iMac</td>
+											<td className="single">Mayotte</td>
+											<td className="single">11, Jan 2020 12:10</td>
+										</tr>
+										<tr>
+											<td className="info">
+												<div className="flex items-center gap-3">
+													<div>
+														<img src={chrome} alt="img.jpg" />
+													</div>
+													<p>Chrome on iPhone</p>
 												</div>
-												<p>Chrome on iPhone</p>
-											</div>
-										</td>
-										<td className="single">Apple iPhone XR</td>
-										<td className="single">Mauritania</td>
-										<td className="single">12, Jan 2020 8:29</td>
-									</tr>
-								</tbody>
-							</table>
+											</td>
+											<td className="single">Apple iPhone XR</td>
+											<td className="single">Mauritania</td>
+											<td className="single">12, Jan 2020 8:29</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>

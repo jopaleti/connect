@@ -3,8 +3,6 @@ import {
 	aira,
 	airb,
 	aire,
-	chrome,
-	circle,
 	radc,
 	radu,
 	sin,
@@ -270,261 +268,262 @@ function Plan() {
 								<option value="export">Export</option>
 							</select>
 						</div>
-						<div className="table">
-							<table>
-								<thead>
-									<tr>
-										<th className="info">
-											<div className="flex items-center justify-between">
-												<h2>#</h2>
-												<div className="flex flex-col gap-0">
+						<div className="tab-container">
+							<div className="table">
+								<table>
+									<thead>
+										<tr>
+											<th className="info">
+												<div className="flex items-center justify-between">
+													<h2>#</h2>
+													<div className="flex flex-col gap-0">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#5E5873"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M4.5 15.75l7.5-7.5 7.5 7.5"
+															/>
+														</svg>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+															/>
+														</svg>
+													</div>
+												</div>
+											</th>
+											<th className="single">
+												<div className="flex items-center justify-between">
+													<div>
+														<img src={sin} alt="img.jpg" />
+													</div>
+													<div className="flex flex-col gap-0">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#5E5873"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M4.5 15.75l7.5-7.5 7.5 7.5"
+															/>
+														</svg>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+															/>
+														</svg>
+													</div>
+												</div>
+											</th>
+											<th className="info">
+												<div className="flex items-center justify-between">
+													<h2>TOTAL</h2>
+													<div className="flex flex-col gap-0">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M4.5 15.75l7.5-7.5 7.5 7.5"
+															/>
+														</svg>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+															/>
+														</svg>
+													</div>
+												</div>
+											</th>
+											<th className="info">
+												<div className="flex items-center justify-between">
+													<h2>ISSUED DATE</h2>
+													<div className="flex flex-col gap-0">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M4.5 15.75l7.5-7.5 7.5 7.5"
+															/>
+														</svg>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+															/>
+														</svg>
+													</div>
+												</div>
+											</th>
+											<th className="info">
+												<div className="flex items-center justify-between">
+													<h2>Due DATE</h2>
+													<div className="flex flex-col gap-0">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M4.5 15.75l7.5-7.5 7.5 7.5"
+															/>
+														</svg>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+															/>
+														</svg>
+													</div>
+												</div>
+											</th>
+											<th className="info">
+												<div className="flex items-center justify-between">
+													<h2>BALANCE</h2>
+													<div className="flex flex-col gap-0">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M4.5 15.75l7.5-7.5 7.5 7.5"
+															/>
+														</svg>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															fill="none"
+															viewBox="0 0 24 24"
+															strokeWidth={1.5}
+															stroke="#B9B9C3"
+															className="w-4 h-4"
+														>
+															<path
+																strokeLinecap="round"
+																strokeLinejoin="round"
+																d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+															/>
+														</svg>
+													</div>
+												</div>
+											</th>
+											<th className="info text-end">ACTIONS</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td className="info">
+												<h3>#91716</h3>
+											</td>
+											<td className="single">
+												<img src={airb} alt="img.jpg" />
+											</td>
+											<td className="info">$4598</td>
+											<td className="info">09 Feb 2020</td>
+											<td className="info">26 Apr 2021</td>
+											<td className="info">
+												<h4 className="px-3 py-1">Paid</h4>
+											</td>
+											<td className="info">
+												<div className="flex items-center gap-3">
+													<img src={aira} alt="img.jpg" />
+													<img src={aire} alt="img.jpg" />
 													<svg
 														xmlns="http://www.w3.org/2000/svg"
 														fill="none"
 														viewBox="0 0 24 24"
 														strokeWidth={1.5}
-														stroke="#5E5873"
-														className="w-4 h-4"
+														stroke="currentColor"
+														className="w-6 h-6"
 													>
 														<path
 															strokeLinecap="round"
 															strokeLinejoin="round"
-															d="M4.5 15.75l7.5-7.5 7.5 7.5"
-														/>
-													</svg>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+															d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
 														/>
 													</svg>
 												</div>
-											</div>
-										</th>
-										<th className="single">
-											<div className="flex items-center justify-between">
-												<div>
-													<img src={sin} alt="img.jpg" />
-												</div>
-												<div className="flex flex-col gap-0">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#5E5873"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M4.5 15.75l7.5-7.5 7.5 7.5"
-														/>
-													</svg>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-														/>
-													</svg>
-												</div>
-											</div>
-										</th>
-										<th className="info">
-											<div className="flex items-center justify-between">
-												<h2>TOTAL</h2>
-												<div className="flex flex-col gap-0">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M4.5 15.75l7.5-7.5 7.5 7.5"
-														/>
-													</svg>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-														/>
-													</svg>
-												</div>
-											</div>
-										</th>
-										<th className="info">
-											<div className="flex items-center justify-between">
-												<h2>ISSUED DATE</h2>
-												<div className="flex flex-col gap-0">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M4.5 15.75l7.5-7.5 7.5 7.5"
-														/>
-													</svg>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-														/>
-													</svg>
-												</div>
-											</div>
-										</th>
-										<th className="info">
-											<div className="flex items-center justify-between">
-												<h2>Due DATE</h2>
-												<div className="flex flex-col gap-0">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M4.5 15.75l7.5-7.5 7.5 7.5"
-														/>
-													</svg>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-														/>
-													</svg>
-												</div>
-											</div>
-										</th>
-										<th className="info">
-											<div className="flex items-center justify-between">
-												<h2>BALANCE</h2>
-												<div className="flex flex-col gap-0">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M4.5 15.75l7.5-7.5 7.5 7.5"
-														/>
-													</svg>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														strokeWidth={1.5}
-														stroke="#B9B9C3"
-														className="w-4 h-4"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-														/>
-													</svg>
-												</div>
-											</div>
-										</th>
-										<th className="info text-end">ACTIONS</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td className="info">
-											<h3>#91716</h3>
-										</td>
-										<td className="single">
-											<img src={airb} alt="img.jpg" />
-										</td>
-										<td className="info">$4598</td>
-										<td className="info">09 Feb 2020</td>
-										<td className="info">26 Apr 2021</td>
-										<td className="info">
-											<h4 className="px-3 py-1">Paid</h4>
-										</td>
-										<td className="info">
-											<div className="flex items-center gap-3">
-												<img src={aira} alt="img.jpg" />
-												<img src={aire} alt="img.jpg" />
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													fill="none"
-													viewBox="0 0 24 24"
-													strokeWidth={1.5}
-													stroke="currentColor"
-													className="w-6 h-6"
-												>
-													<path
-														strokeLinecap="round"
-														strokeLinejoin="round"
-														d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-													/>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									{/* <tr>
+											</td>
+										</tr>
+										{/* <tr>
 										<td className="info">
 											<div className="flex items-center gap-3">
 												<div>
@@ -563,8 +562,9 @@ function Plan() {
 										<td className="single">Mauritania</td>
 										<td className="single">12, Jan 2020 8:29</td>
 									</tr> */}
-								</tbody>
-							</table>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>

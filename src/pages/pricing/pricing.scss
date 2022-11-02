@@ -12,6 +12,15 @@
 			width: 45%;
 			margin: auto;
 			text-align: center;
+			@media (max-width: 900px) {
+				width: 70%;
+				@media (max-width: 700px) {
+					width: 90%;
+					@media (max-width: 395px) {
+						width: 100%;
+					}
+				}
+			}
 			h1 {
 				font-style: normal;
 				font-weight: 500;
@@ -35,7 +44,7 @@
 					position: absolute;
 					top: 50%;
 					// right: 0;
-					left: 25px;
+					left: 2px;
 					transform: translateY(-50%);
 					// transform: translateX(100%);
 				}
@@ -51,14 +60,27 @@
 		}
 		// Trial
 		.trial {
+			@media (max-width: 600px) {
+				flex-direction: column;
+				gap: 30px;
+			}
 			.trial-left {
 				width: 60%;
+				@media (max-width: 600px) {
+					width: 100%;
+					.trial-btn {
+						margin-top: 20px;
+					}
+				}
 				h1 {
 					font-style: normal;
 					font-weight: 500;
 					font-size: 21px;
 					line-height: 26px;
 					color: #7367f0;
+					@media (max-width: 400px) {
+						font-size: 18px;
+					}
 				}
 				p {
 					font-style: normal;
@@ -84,6 +106,9 @@
 			}
 			.trial-right {
 				width: 38%;
+				@media (max-width: 600px) {
+					width: 100%;
+				}
 			}
 		}
 		.faq {
@@ -164,6 +189,9 @@
 						text-align: start !important;
 						width: 70%;
 						padding-bottom: 20px;
+						@media (max-width: 1200px) {
+							width: 100%;
+						}
 					}
 				}
 			}
@@ -202,6 +230,7 @@
 					top: 5px;
 					right: -60%;
 					@media (max-width: 900px) {
+						// right: -;
 					}
 					h6 {
 						font-style: normal;
@@ -273,6 +302,12 @@
 					font-size: 38px;
 					line-height: 46px;
 					color: #7367f0;
+					@media (max-width: 1900px) {
+						font-size: 30px;
+						@media (max-width: 1900px) {
+							font-size: 28px;
+						}
+					}
 				}
 				sup {
 					font-style: normal;
@@ -287,8 +322,19 @@
 					font-size: 14px;
 					line-height: 21px;
 					color: #6e6b7b;
+					@media (max-width: 1900px) {
+						font-size: 13px;
+						@media (max-width: 1900px) {
+							font-size: 12px;
+						}
+					}
 				}
 			}
+		}
+	}
+	.footer {
+		@media (max-width: 1200px) {
+			padding-left: 30px;
 		}
 	}
 }
