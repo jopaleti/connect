@@ -96,10 +96,10 @@ function DashboardTemplate({ children, ...props }) {
 						</div>
 					</div>
 					<div className="mt-16 flex flex-col gap-5">
-						<Link to="/home">
+						<Link to="/">
 							<div
 								className={`flex-item flex gap-2 px-4 py-3 items-center ${
-									window.location.pathname === "/home" ? curr : "no"
+									window.location.pathname === "/" ? curr : "no"
 								}`}
 							>
 								<img src={home} alt="img.jpg" />
