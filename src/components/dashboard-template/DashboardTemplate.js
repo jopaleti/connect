@@ -33,7 +33,7 @@ export function sidebar(setres, res) {
 				</div>
 			</div>
 			<div className="mt-8 flex flex-col gap-5">
-				<Link to="/home">
+				<Link to="/">
 					<div className="flex-item flex gap-2 px-4 py-3 items-center">
 						<img src={home} alt="img.jpg" />
 						<h6>Homepage</h6>

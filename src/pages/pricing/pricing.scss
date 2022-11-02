@@ -207,6 +207,12 @@
 						padding-bottom: 20px;
 						@media (max-width: 1200px) {
 							width: 100%;
+							@media (max-width: 750px) {
+								font-size: 12px;
+								@media (max-width: 680px) {
+									font-size: 11px;
+								}
+							}
 						}
 					}
 				}
