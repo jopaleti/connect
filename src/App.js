@@ -26,7 +26,7 @@ function App() {
 				<Routes>
 					{/* <CreateAccount /> */}
 					<Route exact element={<Login />} path="/login" />
-					<Route exact element={<CreateAccount />} path="/" />
+					<Route exact element={<CreateAccount />} path="/home" />
 					<Route exact element={<Register />} path="/register" />
 					<Route exact element={<ResetPassword />} path="/reset" />
 					<Route exact element={<ForgotPassword />} path="/forgot" />
@@ -34,7 +34,7 @@ function App() {
 					<Route exact element={<Resend />} path="/resend" />
 					<Route exact element={<DashboardTemplate />} path="/dash" />
 					{/* <Route exact element={<Error />} path="/error" /> */}
-					<Route exact element={<Home />} path="/home" />
+					<Route exact element={<Home />} path="/" />
 					<Route exact element={<Api />} path="/api" />
 					<Route exact element={<Pricing />} path="/pricing" />
 					<Route exact element={<License />} path="/license" />
