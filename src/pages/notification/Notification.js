@@ -1,5 +1,4 @@
 import React from "react";
-import { chrome } from "../../assets";
 import { Copywrite, DashAccountTemplate } from "../../components";
 import "./notification.scss";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { illustrate, logo } from "../../assets";
 import "./user-layout.scss";
 
 function UserLayout({ children, ...props }) {

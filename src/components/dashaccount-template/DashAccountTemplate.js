@@ -5,10 +5,10 @@ import "./dashaccount.scss";
 import { Link } from "react-router-dom";
 
 function DashAccountTemplate({ children }) {
-	const [plan, setPlan] = useState(false);
+	// const [plan, setPlan] = useState(false);
 	const [curr, setCurr] = useState("");
 	useEffect(() => {
-		window.location.pathname && setCurr("current");
+		window.location.pathname && setCurr("active");
 	}, [window.location.pathname]);
 	return (
 		<div className="dashacc">
@@ -98,7 +98,7 @@ function DashAccountTemplate({ children }) {
 							<Link to="/account">
 								<div
 									className={`text-flex flex items-center gap-2 ${
-										window.location.pathname === "/account" ? "active" : ""
+										window.location.pathname === "/account" ? curr : ""
 									}`}
 								>
 									<svg

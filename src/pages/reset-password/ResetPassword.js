@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { reset } from "../../assets";
-import { FormSocial, SubmitBtn, UserLayout } from "../../components";
+import { SubmitBtn, UserLayout } from "../../components";
 import "./reset-password.scss";
 
 function ResetPassword() {

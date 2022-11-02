@@ -22,7 +22,7 @@ function Pricing() {
 	const [active1, setActive1] = useState();
 	const Ball = useRef();
 	const toggle = () => {
-		Ball.current.style.left == "25px"
+		Ball.current.style.left === "25px"
 			? (Ball.current.style.left = "2px")
 			: (Ball.current.style.left = "25px");
 	};
@@ -214,7 +214,7 @@ function Pricing() {
 									}}
 									ref={acc}
 								>
-									<div className="flex items-center gap-4">
+									<div className="flex items-center gap-4 icon-txt">
 										<small className="px-2 py-1">
 											<img src={love} alt="img.jpg" />
 										</small>
