@@ -4,10 +4,12 @@
 }
 
 .create-flex {
-	height: 100vh;
+	min-height: 100vh;
 	.create-left {
 		width: 30%;
 		position: relative;
+		align-self: stretch !important;
+		// height: 100%;
 		.logo {
 			position: absolute;
 			left: 100px;
@@ -19,9 +21,22 @@
 			object-fit: cover;
 			object-position: center;
 		}
+		@media (max-width: 980px) {
+			display: none !important;
+		}
 	}
 	.create-right {
 		width: 70%;
+		@media (max-width: 980px) {
+			@include center();
+			width: 80%;
+			@media (max-width: 850px) {
+				width: 90%;
+				@media (max-width: 720px) {
+					width: 95%;
+				}
+			}
+		}
 		.right-container {
 			width: 60%;
 			@include center();
@@ -38,6 +53,15 @@
 					}
 					h5 {
 						color: #7367f0;
+					}
+				}
+			}
+			@media (max-width: 1400px) {
+				width: 70%;
+				@media (max-width: 1230px) {
+					width: 80%;
+					@media (max-width: 1120px) {
+						width: 90%;
 					}
 				}
 			}

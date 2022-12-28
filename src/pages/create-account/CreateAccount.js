@@ -90,7 +90,7 @@ function CreateAccount() {
 	};
 	return (
 		<div>
-			<div className="create-flex flex justify-between">
+			<div className="create-flex flex justify-between items-stretch">
 				<div className="create-left">
 					<img src={create} alt="img.jpg" />
 					<div className="logo">
